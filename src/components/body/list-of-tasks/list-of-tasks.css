@@ -1,0 +1,6 @@
+.listoftasks-container {
+  padding: 1rem;
+  background-color: var(--backgroundColor);
+  border-radius: 8px;
+  margin: 1rem 0;
+}
