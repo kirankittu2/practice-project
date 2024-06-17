@@ -1,5 +1,5 @@
 import React from 'react';
-import '../collapse-menu/collapse-menu.css';
+import '../collapse-menu/Collapse-menu.css';
 
 const Collapsemenu = () => {
   return (

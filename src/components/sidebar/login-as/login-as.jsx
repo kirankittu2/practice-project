@@ -1,6 +1,6 @@
 import React from 'react';
-import '../login-as/login-as.css';
-import Collapsemenu from './collapse-menu/collapse-menu';
+import '../login-as/Login-as.css';
+import Collapsemenu from './collapse-menu/Collapse-menu';
 
 const Loginas = () => {
   return (

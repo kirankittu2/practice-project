@@ -1,13 +1,21 @@
 import './App.css';
-import Body from './components/body/body';
-import Sidebar from './components/sidebar/sidebar';
+import Sidebar from './components/sidebar/Sidebar';
+import Body from './components/body/Body';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './components/login/Login';
 
 function App() {
   return (
-    <div className='main-container'>
-      <Sidebar />
-      <Body />
-    </div>
+    <Router>
+      <div className='main-container'>
+        <Sidebar />
+        <Routes>
+          <Route path='/login' element={<Login />} />
+          <Route path='/' element={<Body />} />
+          {/* Add other routes here */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

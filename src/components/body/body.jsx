@@ -1,9 +1,9 @@
 import React from 'react';
-import './body.css';
-import Topbar from './topbar/topbar';
-import Projectstab from './project-tabs/project-tabs';
-import Listoftasks from './list-of-tasks/list-of-tasks';
-import Metrics from './metrics/metrics';
+import './Body.css';
+import Topbar from './topbar/Topbar';
+import Projectstab from './project-tabs/Project-tabs';
+import Listoftasks from './list-of-tasks/List-of-tasks';
+import Metrics from './metrics/Metrics';
 
 const Body = () => {
   return (

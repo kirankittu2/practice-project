@@ -1,5 +1,5 @@
 import React from 'react';
-import './main-actions.css';
+import './Main-actions.css';
 
 const MainActions = () => {
   return <div> MainActions</div>;

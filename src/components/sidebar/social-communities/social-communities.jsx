@@ -1,5 +1,5 @@
 import React from 'react';
-import './social-communities.css';
+import './Social-communities.css';
 
 const SocialCommunities = () => {
   return (

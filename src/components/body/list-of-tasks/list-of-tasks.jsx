@@ -1,5 +1,5 @@
 import React from 'react';
-import '../list-of-tasks/list-of-tasks.css';
+import '../list-of-tasks/List-of-tasks.css';
 
 const Listoftasks = () => {
   return (

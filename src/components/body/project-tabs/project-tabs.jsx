@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../project-tabs/project-tabs.css';
+import '../project-tabs/Project-tabs.css';
 
 const Tab = ({ label, isActive, onClick }) => (
   <button className={`tab ${isActive ? 'active' : ''}`} onClick={onClick}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './help-center.css';
+import './Help-center.css';
 
 const Helpcenter = () => {
   return (

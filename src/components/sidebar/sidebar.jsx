@@ -1,10 +1,10 @@
 import React from 'react';
-import './sidebar.css';
+import './Sidebar.css';
 import logo from '../../assets/logos/complete-abcd-logo.svg';
-import Navbar from './navbar/navbar';
-import Loginas from '../sidebar/login-as/login-as';
-import SocialCommunities from './social-communities/social-communities';
-import Helpcenter from './help-center/help-center';
+import Navbar from './navbar/Navbar';
+import Loginas from './login-as/Login-as';
+import SocialCommunities from './social-communities/Social-communities';
+import Helpcenter from './help-center/Help-center';
 
 const Sidebar = () => {
   return (
