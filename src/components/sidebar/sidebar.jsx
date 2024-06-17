@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <div className='sidebarContainer'>
       <div className='topmenu-section'>
-        <div className='logo'>
+        <div className='complete-abcd-logo'>
           <img src={logo} alt='ABCD Logo' />
         </div>
         <Loginas />

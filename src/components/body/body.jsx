@@ -4,6 +4,7 @@ import Topbar from './topbar/Topbar';
 import Projectstab from './project-tabs/Project-tabs';
 import Listoftasks from './list-of-tasks/List-of-tasks';
 import Metrics from './metrics/Metrics';
+import Sidebar from '../sidebar/Sidebar';
 
 const Body = () => {
   return (

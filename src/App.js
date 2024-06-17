@@ -8,10 +8,18 @@ function App() {
   return (
     <Router>
       <div className='main-container'>
-        <Sidebar />
         <Routes>
           <Route path='/login' element={<Login />} />
-          <Route path='/' element={<Body />} />
+          <Route
+            path='/'
+            element={
+              <>
+                <Sidebar />
+                <Body />
+              </>
+            }
+          />
+
           {/* Add other routes here */}
         </Routes>
       </div>
