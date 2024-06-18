@@ -1,29 +1,59 @@
 // src/Login.js
 import React, { useState } from 'react';
-import './Login.css';
+import './Register.css';
 import logo from '../../assets/logos/badge-abcd-logo.svg';
 import SocialCommunities from '../sidebar/social-communities/Social-communities';
 
-function Login() {
+function Register() {
+  const [firstname, setFirstName] = useState('');
+  const [lastname, setLastName] = useState('');
+  const [companyname, setCompanyName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // Handle login logic here
+    console.log('First Name:', firstname);
+    console.log('Last Name:', lastname);
+    console.log('Company Name:', companyname);
     console.log('Email:', email);
     console.log('Password:', password);
   };
 
   return (
-    <div className='login-container'>
+    <div className='register-container'>
       <div className='logo badge-abcd-logo'>
         <img src={logo} alt='ABCD Logo' />
       </div>
-      <h1>Welcome Back</h1>
-      <p>For secure access to your account, please enter your credentials.</p>
+      <h1>Welcome Onboard!</h1>
+      <p>To kick things off, we need a bit of info.</p>
+      <p>Fill in your details below, and let's get you set up in no time.</p>
       <form onSubmit={handleSubmit}>
         <div className='form-group'>
+          <input
+            type='text'
+            value={firstname}
+            onChange={(e) => setFirstName(e.target.value)}
+            required
+            placeholder='First Name'
+          />
+          <input
+            type='text'
+            value={lastname}
+            onChange={(e) => setLastName(e.target.value)}
+            required
+            placeholder='Last Name'
+          />
+        </div>
+        <div className='form-group'>
+          <input
+            type='text'
+            value={companyname}
+            onChange={(e) => setCompanyName(e.target.value)}
+            required
+            placeholder='Company Name'
+          />
           <input
             type='email'
             value={email}
@@ -40,9 +70,16 @@ function Login() {
             required
             placeholder='Password'
           />
+          <input
+            type='password'
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+            placeholder='Reset Password'
+          />
         </div>
         <button type='submit' className='btn'>
-          Login
+          Register
         </button>
       </form>
       <div className='formlink-below'>
@@ -79,4 +116,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Register;

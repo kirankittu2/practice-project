@@ -69,11 +69,12 @@ img {
   cursor: pointer;
   border-radius: 30px;
   box-shadow: 0 2px 4px var(--quaternaryColor);
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 3.5rem;
   color: var(--whiteColor);
   background: var(--primaryColor);
   font-size: var(--normalFontSize);
   height: 45px;
+  width: max-content;
 }
 .btn .icon {
   margin-left: 0.5rem;
@@ -113,20 +114,6 @@ input {
   font-size: var(--normalFontSize);
 }
 
-input[type='text'] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  outline: none; /* Removes the default focus outline */
-}
-
-input[type='text']:focus {
-  border: 2px solid #555; /* Custom focus border */
-}
-
 h1,
 h2,
 h3,
@@ -136,4 +123,10 @@ p {
 
 .orange-link {
   color: var(--primaryColor);
+}
+
+hr {
+  height: 1px;
+  background-color: var(--borderColor);
+  border: none;
 }
