@@ -1,32 +1,41 @@
-import './App.css';
-import Sidebar from './components/sidebar/Sidebar';
-import Body from './components/body/Body';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './components/login/Login';
-import './Media-queries.css';
-import Register from './components/register/Register';
+import "./App.css";
+import Sidebar from "./components/sidebar/Sidebar";
+import Body from "./components/body/Body";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Login from "./components/login/Login";
+import "./Media-queries.css";
+import Register from "./components/register/Register";
+import PrivateRoute from "./components/private-route";
 
 function App() {
-  return (
-    <Router>
-      <div className='main-container'>
-        <Routes>
-          <Route path='/login' element={<Login />} />
-          <Route
-            path='/'
-            element={
-              <>
-                <Sidebar />
-                <Body />
-              </>
-            }
-          />
-          <Route path='/register' element={<Register />} />
+  const router = createBrowserRouter([
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
+    },
+    {
+      path: "/",
+      element: <PrivateRoute element={MainLayout} />,
+    },
+  ]);
 
-          {/* Add other routes here */}
-        </Routes>
-      </div>
-    </Router>
+  return (
+    <div className="main-container">
+      <RouterProvider router={router} />
+    </div>
+  );
+}
+
+function MainLayout() {
+  return (
+    <>
+      <Sidebar />
+      <Body />
+    </>
   );
 }
 
